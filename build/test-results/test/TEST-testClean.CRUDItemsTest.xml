@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testClean.CRUDItemsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-08-06T03:28:06" hostname="DESKTOP-PN1BFK5" time="7.901">
+  <properties/>
+  <testcase name="verifyUpdateItems()" classname="testClean.CRUDItemsTest" time="4.485"/>
+  <testcase name="verifyCreateItems()" classname="testClean.CRUDItemsTest" time="0.592"/>
+  <testcase name="verifyReadItems()" classname="testClean.CRUDItemsTest" time="1.785"/>
+  <testcase name="verifyDeleteItem()" classname="testClean.CRUDItemsTest" time="1.034"/>
+  <system-out><![CDATA[-----------------------------
+ConfigEnv.host: http://todo.ly
+ConfigEnv.user: ucb@ucb2021.com
+ConfigEnv.password: 12345
+-----------------------------
+Request method:	POST
+Request URI:	http://todo.ly/api/items.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dWNiQHVjYjIwMjEuY29tOjEyMzQ1
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"Content":"ItemPamela"}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=dx0ec2cbavqrlayc3fauasmc; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 06 Aug 2021 03:28:05 GMT
+Content-Length: 531
+
+{
+    "Id": 10910147,
+    "Content": "ItemPamela",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
+    "ParentId": null,
+    "Path": "",
+    "Collapsed": false,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+    "LastSyncedDateTime": "/Date(1628220485173)/",
+    "Children": [
+        
+    ],
+    "DueDateTime": null,
+    "CreatedDate": "/Date(1628220485157)/",
+    "LastCheckedDate": null,
+    "LastUpdatedDate": "/Date(1628220485157)/",
+    "Deleted": false,
+    "Notes": "",
+    "InHistory": false,
+    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 690429
+}
+Request method:	PUT
+Request URI:	http://todo.ly/api/items/10910147.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dWNiQHVjYjIwMjEuY29tOjEyMzQ1
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"Checked":true,"Content":"UpdateItemPamela"}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=u3kcvtkdlh2dzosaguhcvj2z; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 06 Aug 2021 03:28:06 GMT
+Content-Length: 556
+
+{
+    "Id": 10910147,
+    "Content": "UpdateItemPamela",
+    "ItemType": 1,
+    "Checked": true,
+    "ProjectId": null,
+    "ParentId": null,
+    "Path": "",
+    "Collapsed": false,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+    "LastSyncedDateTime": "/Date(1628220486811)/",
+    "Children": [
+        
+    ],
+    "DueDateTime": null,
+    "CreatedDate": "/Date(1628220485157)/",
+    "LastCheckedDate": "/Date(1628220486763)/",
+    "LastUpdatedDate": "/Date(1628220486763)/",
+    "Deleted": false,
+    "Notes": "",
+    "InHistory": true,
+    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 690429
+}
+-----------------------------
+ConfigEnv.host: http://todo.ly
+ConfigEnv.user: ucb@ucb2021.com
+ConfigEnv.password: 12345
+-----------------------------
+Request method:	POST
+Request URI:	http://todo.ly/api/items.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dWNiQHVjYjIwMjEuY29tOjEyMzQ1
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"Content":"CreateItemPamela"}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=f2xbjbzgnmhkbb2crhvfdf0d; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 06 Aug 2021 03:28:06 GMT
+Content-Length: 537
+
+{
+    "Id": 10910148,
+    "Content": "CreateItemPamela",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
+    "ParentId": null,
+    "Path": "",
+    "Collapsed": false,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+    "LastSyncedDateTime": "/Date(1628220487435)/",
+    "Children": [
+        
+    ],
+    "DueDateTime": null,
+    "CreatedDate": "/Date(1628220487437)/",
+    "LastCheckedDate": null,
+    "LastUpdatedDate": "/Date(1628220487437)/",
+    "Deleted": false,
+    "Notes": "",
+    "InHistory": false,
+    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 690429
+}
+-----------------------------
+ConfigEnv.host: http://todo.ly
+ConfigEnv.user: ucb@ucb2021.com
+ConfigEnv.password: 12345
+-----------------------------
+Request method:	POST
+Request URI:	http://todo.ly/api/items.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dWNiQHVjYjIwMjEuY29tOjEyMzQ1
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"Collapsed":true,"Content":"GetItemPamela"}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=nv40mvhjmfyryclum0orfpyo; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 06 Aug 2021 03:28:07 GMT
+Content-Length: 533
+
+{
+    "Id": 10910149,
+    "Content": "GetItemPamela",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
+    "ParentId": null,
+    "Path": "",
+    "Collapsed": true,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+    "LastSyncedDateTime": "/Date(1628220487966)/",
+    "Children": [
+        
+    ],
+    "DueDateTime": null,
+    "CreatedDate": "/Date(1628220487950)/",
+    "LastCheckedDate": null,
+    "LastUpdatedDate": "/Date(1628220487950)/",
+    "Deleted": false,
+    "Notes": "",
+    "InHistory": false,
+    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 690429
+}
+Request method:	GET
+Request URI:	http://todo.ly/api/items/10910149.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dWNiQHVjYjIwMjEuY29tOjEyMzQ1
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=yimellvfcjxika2sytvtrrn4; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 06 Aug 2021 03:28:07 GMT
+Content-Length: 533
+
+{
+    "Id": 10910149,
+    "Content": "GetItemPamela",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
+    "ParentId": null,
+    "Path": "",
+    "Collapsed": true,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+    "LastSyncedDateTime": "/Date(1628220488714)/",
+    "Children": [
+        
+    ],
+    "DueDateTime": null,
+    "CreatedDate": "/Date(1628220487950)/",
+    "LastCheckedDate": null,
+    "LastUpdatedDate": "/Date(1628220487950)/",
+    "Deleted": false,
+    "Notes": "",
+    "InHistory": false,
+    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 690429
+}
+-----------------------------
+ConfigEnv.host: http://todo.ly
+ConfigEnv.user: ucb@ucb2021.com
+ConfigEnv.password: 12345
+-----------------------------
+Request method:	POST
+Request URI:	http://todo.ly/api/items.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dWNiQHVjYjIwMjEuY29tOjEyMzQ1
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"Content":"DeleteItemPamela"}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=u4kepkoojtu5dei1ulxdjxh1; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 06 Aug 2021 03:28:09 GMT
+Content-Length: 537
+
+{
+    "Id": 10910150,
+    "Content": "DeleteItemPamela",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
+    "ParentId": null,
+    "Path": "",
+    "Collapsed": false,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+    "LastSyncedDateTime": "/Date(1628220489806)/",
+    "Children": [
+        
+    ],
+    "DueDateTime": null,
+    "CreatedDate": "/Date(1628220489777)/",
+    "LastCheckedDate": null,
+    "LastUpdatedDate": "/Date(1628220489777)/",
+    "Deleted": false,
+    "Notes": "",
+    "InHistory": false,
+    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 690429
+}
+Request method:	DELETE
+Request URI:	http://todo.ly/api/items/10910150.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Basic dWNiQHVjYjIwMjEuY29tOjEyMzQ1
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=rxh55tbviutgthdnez02uooa; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Fri, 06 Aug 2021 03:28:09 GMT
+Content-Length: 536
+
+{
+    "Id": 10910150,
+    "Content": "DeleteItemPamela",
+    "ItemType": 1,
+    "Checked": false,
+    "ProjectId": null,
+    "ParentId": null,
+    "Path": "",
+    "Collapsed": false,
+    "DateString": null,
+    "DateStringPriority": 0,
+    "DueDate": "",
+    "Recurrence": null,
+    "ItemOrder": null,
+    "Priority": 4,
+    "LastSyncedDateTime": "/Date(1628220490290)/",
+    "Children": [
+        
+    ],
+    "DueDateTime": null,
+    "CreatedDate": "/Date(1628220489777)/",
+    "LastCheckedDate": null,
+    "LastUpdatedDate": "/Date(1628220490273)/",
+    "Deleted": true,
+    "Notes": "",
+    "InHistory": false,
+    "SyncClientCreationId": null,
+    "DueTimeSpecified": true,
+    "OwnerId": 690429
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

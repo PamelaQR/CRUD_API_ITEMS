@@ -1,0 +1,23 @@
+{
+  "schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Id": { "type": "integer"},
+    "Content": { "type": "string"    },
+    "ItemsCount": { "type": "integer"},
+    "Icon": { "type": "integer"},
+    "ItemType": { "type": "integer"},
+
+    "Collapsed": { "type":"boolean"    },
+    "ItemOrder": { "type": "integer"},
+    "Children": { "type": "array"},
+    "IsProjectShared": { "type":"boolean"    },
+
+    "IsShareApproved": { "type":"boolean"    },
+    "IsOwnProject": { "type":"boolean"    },
+    "LastSyncedDateTime": { "type": "string"    },
+    "LastUpdatedDate": { "type": "string"    },
+    "Deleted": { "type":"boolean"    }
+
+  }
+}
